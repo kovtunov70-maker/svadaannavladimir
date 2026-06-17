@@ -1,0 +1,1032 @@
+/* ====== Connection fonts ====== */
+
+@font-face {
+    font-family: 'PassionsConflictRUS';
+    src: url('../fonts/PassionsConflictRUS.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/PassionsConflictRUS.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/PassionsConflictRUS.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/PassionsConflictRUS.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../fonts/PassionsConflictRUS.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/PassionsConflictRUS.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'TTFirsNeue';
+    src: url('../fonts/TTFirsNeue-Regular.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/TTFirsNeue-Regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/TTFirsNeue-Regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/TTFirsNeue-Regular.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../fonts/TTFirsNeue-Regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/TTFirsNeue-Regular.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'TTFirsNeue';
+    src: url('../fonts/TTFirsNeue-Medium.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/TTFirsNeue-Medium.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/TTFirsNeue-Medium.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/TTFirsNeue-Medium.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../fonts/TTFirsNeue-Medium.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/TTFirsNeue-Medium.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+    font-weight: 500;
+}
+
+/* ====== Specification ====== */
+
+body {
+    font-family: 'TTFirsNeue';
+    background: #ffffff;
+    font-size: 16px;
+    color: #000;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    /* width: 1170px; */
+    width: 100%;
+    max-width: 402px;
+
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+div,
+p,
+form,
+input,
+a,
+span,
+button,
+ul,
+li {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'TTFirsNeue';
+    font-size: 16px;
+    color: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'TTFirsNeue';
+    font-weight: 400;
+    color: #000;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+a {
+    font-family: 'TTFirsNeue';
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+button,
+button:hover,
+button:focus,
+button:active,
+input,
+input:hover,
+input:focus,
+input:active,
+textarea,
+textarea:hover,
+textarea:focus,
+textarea:active {
+    outline: none;
+}
+
+input[type="submit"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.btn {
+    font-family: 'TTFirsNeue';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 254px;
+    height: 54px;
+    border-radius: 30px;
+    background: #73847A;
+    color: #fff;
+    font-size: 20px;
+    line-height: 92%;
+}
+
+.main-bg {
+    max-width: 500px;
+    margin: 0 auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.main-bg::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 240px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.0) 0%, #fff 100%);
+    z-index: 1;
+}
+
+.wh-bg {
+    background: rgba(255,255,255,0.9);
+}
+
+/* ====== Hero ====== */
+
+.hero {
+    /* background: url(../img/hero-bg.png) no-repeat center top / cover; */
+    min-height: 700px;
+    min-height: 100vh;
+    /* padding-top: 28px;
+    padding-bottom: 22px; */
+    box-sizing: border-box;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 240px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.0) 0%, rgba(255,255,255,0.9) 100%);
+    z-index: 1;
+}
+
+.hero .container {
+
+    /* min-height: 830px; */
+    min-height: 100vh;
+    position: relative;
+    z-index: 10;
+}
+
+.hero-wrap {
+    /* min-height: 830px; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-title {
+    margin-top: 28px;
+    font-family: 'PassionsConflictRUS';
+    font-size: 134px;
+    font-weight: 400;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-title-row {
+    display: block;
+}
+
+.hero-title-row_1 {
+
+}
+.hero-title-row_2 {
+    margin-top: -80px;
+}
+.hero-title-row_3 {
+    margin-top: -60px;
+}
+
+.hero-date {
+    margin-bottom: 22px;
+}
+
+.hero-date__num {
+    font-family: 'PassionsConflictRUS';
+    font-size: 123px;
+    color: #73847A;
+    margin-top: -26px;
+}
+
+.hero-date__text {
+
+}
+
+.hero-date__text.left {
+    font-size: 24px;
+}
+
+.hero-date__text.right {
+    display: block;
+    font-size: 24px;
+    text-align: right;
+    width: 100%;
+    margin-top: -23px;
+}
+
+
+/* ====== Appeal ====== */
+
+.appeal {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.appeal-wrap {
+
+}
+
+.appeal__title {
+    font-size: 40px;
+    line-height: 90%;
+    text-align: center;
+    margin-bottom: 34px;
+}
+
+.appeal__text {
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: 14px;
+    color: #373737;
+}
+
+.appeal-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 44px;
+}
+
+.appeal-date__up {
+    font-size: 24px;
+}
+
+.appeal-date__num {
+    font-family: 'PassionsConflictRUS';
+    text-align: center;
+    font-size: 123px;
+    color: #73847A;
+    line-height: 60%;
+}
+
+.appeal-date__down {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 26px;
+}
+
+
+/* ====== Location ====== */
+
+.location {
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.location__title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 54px;
+}
+
+.location__des {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 34px;
+}
+
+.location__des span {
+    display: block;
+    font-weight: 500;
+}
+
+.location__time {
+    font-size: 24px;
+    padding: 16px 10px;
+    border-radius: 45px;
+    font-weight: 500;
+    border: 1px solid rgba(88,102,67,0.2);
+    max-width: 216px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 92%;
+    margin-bottom: 34px;
+}
+
+.location-map {
+    background: #ececec;
+    width: 100%;
+    height: 227px;
+    margin-bottom: 24px;
+}
+
+.location-map div {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.location-map iframe {
+    width: 100% !important;
+    height: 100% !important;
+    margin-top: -2px;
+    margin-left: -2px;
+}
+
+.location__link {
+    margin: 0 auto;
+}
+
+
+/* ====== Timing ====== */
+
+.timing {
+    padding-top: 50px;
+    padding-bottom: 66px;
+}
+
+.timing__title {
+    font-size: 40px;
+    line-height: 90%;
+    margin-bottom: 60px;
+}
+
+.timing-items {
+    padding: 0 4px;
+}
+
+.timing-item {
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+    padding-bottom: 6px;
+}
+
+.timing-item:last-child {
+    margin-bottom: 0;
+}
+
+.timing-item__title {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 92%;
+    margin-bottom: 20px;
+}
+
+.timing-item__text {
+    font-size: 24px;
+    margin-bottom: 14px;
+    position: relative;
+    z-index: 10;
+}
+
+.timing-item__text span {
+    font-weight: 500;
+}
+
+.timing-item__text:last-child {
+    margin-bottom: 0;
+}
+
+.timing-item__text strong {
+    display: block;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+.timing-item__icon {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    z-index: 5;
+}
+
+
+/* ====== Dresscode ====== */
+
+.dresscode {
+    padding: 84px 0 134px;
+    position: relative;
+    overflow: hidden;
+}
+
+.dresscode::before {
+    content: '';
+    height: 100%;
+    width: 120%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -10%;
+    right: -10%;
+    background: #F6F6F3;
+    z-index: -1;
+    box-shadow: inset 0 0 20px 10px #ffffff;
+    opacity: 0.6;
+}
+
+.dresscode__title {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 34px;
+}
+
+.dresscode__text {
+    font-size: 20px;
+    color: #373737;
+    line-height: 120%;
+    margin-bottom: 14px;
+}
+
+.dresscode-palit {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+    margin-bottom: 8px;
+}
+
+.dresscode-palit-img {
+    display: block;
+    object-fit: contain;
+}
+
+.dresscode-palit-img_1 {
+    margin-top: 36px;
+    margin-bottom: -20px;
+}
+
+.dresscode__woman {
+    width: 100%;
+    margin-bottom: 17px;
+}
+
+.dresscode__woman img {
+    display: block;
+    width: 100%;
+}
+
+.dresscode-des {
+    font-size: 24px;
+    margin-bottom: 14px;
+}
+
+.dresscode__man {
+    width: 100%;
+}
+
+.dresscode__man img {
+    width: 95%;
+}
+
+
+/* ====== Details ====== */
+
+.details {
+    margin-top: -65px;
+    padding-bottom: 50px;
+}
+
+.details__title {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.details-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 34px;
+}
+
+.details-item:last-child {
+    margin-bottom: 0;
+}
+
+.details-item__img {
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.details-item__img::after {
+    content: '';
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #73847A;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.details-item__img img {
+    margin-top: 8px;
+    margin-bottom: -8px;
+}
+
+.details-item_1 .details-item__img img {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.details-item__name {
+    font-size: 24px;
+    line-height: 90%;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.details-item__text {
+    font-size: 20px;
+    line-height: 120%;
+    color: #373737;
+    text-align: center;
+}
+
+
+/* ====== Timer ====== */
+
+.timer {
+    padding: 46px 0 74px;
+}
+
+.timer__title {
+    font-size: 40px;
+    line-height: 90%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.timer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.timer-item:last-child {
+    margin-bottom: 0;
+}
+
+.timer-item-num {
+    width: 173px;
+    height: 173px;
+    border-radius: 50%;
+    border: 1px solid #73847A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer-item-num span {
+    font-family: 'PassionsConflictRUS';
+    font-size: 128px;
+    line-height: 90%;
+    letter-spacing: -0.01em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.timer-item__text {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+
+/* ====== Message ====== */
+
+.message {
+    padding: 60px 0;
+    background: #F0E7E0;
+}
+
+.message__title {
+    font-size: 40px;
+    line-height: 90%;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.message__text {
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: 44px;
+}
+
+.message__btn {
+    margin: 0 auto;
+}
+
+
+/* ====== Contacts ====== */
+
+.contacts {
+    padding: 70px 0 0;
+    /* margin-bottom: 64px; */
+    margin-bottom: 100px;
+    position: relative;
+}
+.contacts::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 240px;
+    background: linear-gradient(0deg, rgba(255,255,255,0.0) 0%, rgba(255,255,255,0.9) 100%);
+    z-index: 1;
+}
+
+.contacts__title {
+    font-size: 40px;
+    line-height: 90%;
+    text-align: center;
+    margin-bottom: 11px;
+}
+
+.contacts__text {
+    font-size: 20px;
+    text-align: center;
+    color: #373737;
+    line-height: 120%;
+    margin-bottom: 47px;
+}
+
+.contacts__name {
+    font-size: 24px;
+    line-height: 90%;
+    text-align: center; 
+    margin-bottom: 15px;
+}
+
+.contacts__phone {
+    display: block;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+}
+
+
+/* ====== Footer ====== */
+
+.footer {
+    /* padding-bottom: 50px; */
+    min-height: 650px;
+    height: 100vh;
+}
+
+.footer .container {
+    min-height: 650px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .hero-title {
+    /* margin-bottom: 373px; */
+    margin-top: 28px;
+}
+
+.footer__goodbye {
+    font-family: 'PassionsConflictRUS';
+    text-align: center;
+    line-height: 65%;
+    font-size: 96px;
+    margin-bottom: 50px;
+}
+
+
+/* попап */
+
+.modal-overlay {
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal-overlay.collapse {
+    display: flex !important;
+    animation: 0.4s animeModal;
+}
+
+@keyframes animeModal {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.modal {
+    position: relative;
+    padding: 60px 20px;
+
+    display: flex;
+    justify-content: center;
+    max-width: 360px;
+    width: 100%;
+    margin: 0 auto;
+    background: rgba(240, 231, 224, 1);
+}
+
+.modal-overlay.collapse .modal {
+    animation: 0.5s animeModalWr;
+}
+
+@keyframes animeModalWr {
+    0% {opacity: 0; transform: translateY(-300px);}
+    100% {opacity: 1; transform: translateY(0px);}
+}
+
+.modal-close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.modal-close .line {
+    width: 100%;
+    height: 2px;
+    background: #373737;
+    position: absolute;
+    top: 50%;
+}
+
+.modal-close .line-1 {
+    transform: rotate(45deg);
+}
+
+.modal-close .line-2 {
+    transform: rotate(-45deg);
+}
+
+.modal-wrap {
+    max-width: 402px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-text {
+    text-align: center;
+    font-size: 20px;
+    line-height: 120%;
+    margin-bottom: 64px;
+}
+
+.modal__btn {
+    margin-bottom: 14px;
+}
+
+.modal__btn:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+.btn-music {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #73847A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 30px;
+    bottom: 120px;
+
+    z-index: 100;
+}
+
+.btn-music img {
+    width: 40px;
+}
+
+
+
+
+/* Попап приветствия */
+
+.modal-overlay-pre {
+    background: rgba(240, 231, 224, 1);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal-overlay-pre.collapse {
+    display: flex !important;
+    animation: 0.4s animeModal;
+}
+
+.modal-pre {
+    position: relative;
+    /* padding: 60px 20px; */
+
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    background: rgba(240, 231, 224, 1);
+}
+
+.hero-text {
+    margin-bottom: auto;
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+    max-width: 300px;
+    margin: 20px auto auto; 
+}
+
+.modalpre-btn {
+    width: 100%;
+    /* max-width: 340px; */
+    height: 65px;
+    margin-bottom: 40px;
+    font-size: 22px;
+    border-radius: 35px;
+}
+
+
+.body-fixed {
+    position: fixed;
+    left: 50%;
+    margin-left: -250px;
+    width: 100%;
+}
+
+
+
+
+
+
+.btn-music.start-wedding-btn img {
+  position: relative;
+  z-index: 3;
+}
+
+
+.btn-music.start-wedding-btn::before,
+.btn-music.start-wedding-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit; 
+  background-color: #73847A; 
+  z-index: -1; 
+  opacity: 0;
+  pointer-events: none; 
+}
+
+/* Запуск волн */
+.btn-music.start-wedding-btn::before {
+  animation: pulse-wave 2s infinite linear;
+}
+.btn-music.start-wedding-btn::after {
+  animation: pulse-wave 2s infinite linear;
+  animation-delay: 1s;
+}
+
+@keyframes pulse-wave {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.5); 
+    opacity: 0;
+  }
+}
+
+
+
+
+.hero-wrap .hero-title .hero-title-row  {
+    font-size: 110px !important;
+    
+}
+
+.hero-wrap .hero-title-row_2 {
+    margin-top: -50px;
+}
+
+
+
+/* <390 */
+@media screen and (max-width: 390px) {
+    .appeal__text {
+        font-size: 19px;
+    }
+    .hero-date__num {
+        font-size: 120px;
+    }
+}
+/* <380 */
+@media screen and (max-width: 380px) {
+    .hero-date__num {
+        font-size: 116px;
+    }
+
+    
+}
+/* <370 */
+@media screen and (max-width: 370px) {
+    .hero-title-row {
+        font-size: 128px;
+    }
+    .hero-date__num {
+        font-size: 112px;
+    }
+    .appeal__title {
+        font-size: 38px;
+    }
+    .appeal__text {
+        font-size: 18px;
+    }
+    .message__text {
+        font-size: 18px;
+    }
+}
